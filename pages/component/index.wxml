@@ -1,0 +1,36 @@
+<page-meta>
+  <navigation-bar title="首页" />
+</page-meta>
+<view class="main">
+  <view>
+    <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+  </view>
+  <swiper indicator-dots="true" autoplay="true" interval="5000" duration="500" circular="true">
+    <block wx:for="{{background}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="selected">
+    <view class="select-title">精选主题</view>
+    <view class="select-top">
+      <view class="select-top-small" wx:for="{{selectTops}}" wx:key="index">
+        <image src="{{item}}" bindtap="queryItemClick" data-name="{{item}}"></image>
+      </view> 
+    </view>
+    <view class="select-bottom">
+      <image src="{{selectBottom}}"></image>
+    </view>
+  </view>
+  <view class="select">
+    <view class="select-title">最近新品</view>
+    <view class="newest-box" >
+      <view class="newest-list" wx:for="{{newestList}}" wx:key="index">
+        <image src="{{item.img}}" bindtap="queryItemClick" data-index="{{index}}"></image>
+        <view class="newest-text"><text>{{item.name}}</text></view>
+        <view class="newest-text"><text>{{item.cost}}</text></view>
+      </view>
+    </view>
+  </view>
+</view>

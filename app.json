@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/component/index",
+    "pages/component/detail/detail",
+    "pages/component/category/category"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "蛋挞",
+    "navigationBarBackgroundColor": "#AB956D",
+    "backgroundColor": "#eeeeee",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#b7b7b7",
+    "selectedColor": "#AB956D",
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "pages/component/index",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/component/index",
+        "text": "分类"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  }
+}
