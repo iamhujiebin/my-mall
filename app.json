@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/component/index",
+    "pages/component/list/list",
     "pages/component/category/category",
     "pages/component/detail/detail"
   ],

@@ -1,0 +1,12 @@
+<view class="main">
+  <view class="banner">
+    <image src="/image/list1.png"></image>
+  </view>
+  <view class="list-box">
+    <view class="newest-list" wx:for="{{currentList}}" wx:key="index">
+      <image src="{{item.img}}"></image>
+      <view class="newest-text"><text>{{item.text}}</text></view>
+      <view class="newest-text"><text>{{item.cost}}</text></view>
+    </view>
+  </view>
+</view>

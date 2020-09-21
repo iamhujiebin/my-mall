@@ -11,8 +11,14 @@ Page({
       '/image/b3.jpg'
     ],
     selectTops: [
-      '/image/s1.png',
-      '/image/s2.png'
+      {
+        id:1,
+        img:"/image/s1.png",
+      },
+      {
+        id:2,
+        img:"/image/s2.png"
+      }
     ],
     selectBottom: "/image/s3.png",
     newestList: [{
@@ -81,10 +87,9 @@ Page({
   },
   queryCategoryClick: function (e) {
     var index = e.currentTarget.dataset.index
-    console.log(index)
-    // wx.navigateTo({
-    // url: '../queryResult/queryResult?queryBean=' + queryBean,
-    // })
+    wx.navigateTo({
+    url: '/pages/component/list/list?index=' + index,
+    })
   },
   queryItemClick: function (e) {
     var index = e.currentTarget.dataset.index
