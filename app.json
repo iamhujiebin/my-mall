@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/component/index",
-    "pages/component/detail/detail",
-    "pages/component/category/category"
+    "pages/component/category/category",
+    "pages/component/detail/detail"
   ],
   "window": {
     "navigationBarTextStyle": "white",
@@ -19,10 +19,14 @@
     "list": [
       {
         "pagePath": "pages/component/index",
+        "iconPath": "image/12.png",
+        "selectedIconPath": "image/11.png",
         "text": "主页"
       },
       {
-        "pagePath": "pages/component/index",
+        "pagePath": "pages/component/category/category",
+        "iconPath": "image/22.png",
+        "selectedIconPath": "image/21.png",
         "text": "分类"
       }
     ]

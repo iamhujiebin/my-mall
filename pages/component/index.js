@@ -4,6 +4,7 @@ const app = getApp()
 
 Page({
   data: {
+    pull: false,
     background: [
       '/image/b1.jpg',
       '/image/b2.jpg',
@@ -52,7 +53,32 @@ Page({
       }
     ]
   },
-  onLoad: function () {},
+  onPullDownRefresh: function () {
+    if (!this.data.pull) {
+      this.setData({
+        pull: true,
+        background: [
+          '/image/b1.jpg',
+          '/image/b2.jpg'
+        ],
+      })
+    } else {
+      this.setData({
+        pull: false,
+        background: [
+          '/image/b1.jpg',
+          '/image/b2.jpg',
+          '/image/b3.jpg'
+        ],
+      })
+    }
+
+    wx.stopPullDownRefresh({ //需要手动调用取消
+      success: (res) => {
+        console.log("stop pull down")
+      },
+    })
+  },
   queryCategoryClick: function (e) {
     var index = e.currentTarget.dataset.index
     console.log(index)
