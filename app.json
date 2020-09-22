@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/component/search/search",
     "pages/component/index",
     "pages/component/list/list",
     "pages/component/category/category",

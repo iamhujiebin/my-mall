@@ -67,3 +67,20 @@ swiper-item image {
 .newest-box .newest-list .newest-text{
   font-size: 32rpx;
 }
+
+.search{
+  padding: 20rpx;
+}
+.search-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rpx;
+  color: #aaa;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 20rpx;
+}
+.search-text icon{
+  margin-right: 10rpx;
+}
