@@ -1,0 +1,8 @@
+<view class="container">
+	<view>
+		<button class="button" bindtap="getVideo"> 点击获取视频 </button>
+	</view>
+	<view>
+		<video wx:if="{{hasVideo}}" class="video" src="{{videoUrl}}"></video>
+	</view>
+</view>

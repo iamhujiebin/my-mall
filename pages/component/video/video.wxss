@@ -1,0 +1,7 @@
+.button {
+	margin-bottom: 50rpx;
+}
+.video {
+	height: 1000rpx;
+	width: 540rpx;
+}
